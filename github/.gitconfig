@@ -24,3 +24,8 @@
 [user]
 	email = alisyuksekkaya@gmail.com
 	name = Ali Yuksekkaya
+	signingkey = /home/maven/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

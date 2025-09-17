@@ -111,8 +111,18 @@ alias dev="cd /mnt/d/repos"
 alias vim="nvim"
 alias ls="eza --color=always --git --icons=always"
 alias cd="z"
+export DOTNET_ROOT=/usr/lib/dotnet
+export PATH=$PATH:/usr/lib/dotnet
+export ASPNETCORE_Kestrel__Certificates__Default__Password="+TX!pEb2y49Yvr{C"
+export ASPNETCORE_Kestrel__Certificates__Default__Path="/home/maven/.aspnet/dev-certs/https/localhost.pfx"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias lt='/home/maven/.LabelTurbo/lt'
+alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /home/maven/docker/appdata/lazy-docker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
